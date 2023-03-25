@@ -25,9 +25,9 @@ const App = () => {
           options={{
             title: 'Cassimiro Corte',
             headerStyle: {
-              backgroundColor: '#000',
+              backgroundColor: '#FFF',
             },
-            headerTintColor: '#fff',
+            headerTintColor: '#000',
             headerTitleStyle: {
               fontWeight: 'bold',
             },

@@ -2,14 +2,9 @@ import React, { useEffect } from 'react';
 import { View, SafeAreaView, Text, StyleSheet, Platform, ScrollView  } from 'react-native';
 import { DatabaseConnection } from '../database/database-connection';
 import { Card, Rating } from '@rneui/themed';
+import Ratings from './components/Ratings';
 
 const db = DatabaseConnection.getConnection();
-
-var Ratings = function () {
-  var ratingCompleted = function (rating) {
-      console.log('Rating is: ' + rating);
-  };
-};
 
 const HomeScreen = ({ navigation }) => {
   useEffect(() => {
@@ -35,6 +30,7 @@ const HomeScreen = ({ navigation }) => {
     <SafeAreaView style={{ flex: 1 }}>
       <View style={{ flex: 1, backgroundColor: 'white' }}>
         <Text>
+          <Ratings />
         </Text>
       </View>
     </SafeAreaView>
